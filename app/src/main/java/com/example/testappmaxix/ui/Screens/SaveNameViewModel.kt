@@ -18,7 +18,7 @@ class SaveNameViewModel  @Inject constructor(private val defaultRepository: Defa
 
     fun updateNameState(name: String) {
         _nameStateFlow.value = NameState(name)
-       // Log.d("App", name)
+
     }
 
     fun SaveName()= defaultRepository.saveName(nameStateFlow.value.name)

@@ -14,7 +14,7 @@ class InfoViewModel @Inject constructor( private val defaultRepository: DefaultR
     val infoStateFlow: StateFlow<InfoState> = _infoStateFlow
 
     init {
-        // Load data from SharedPreferences when ViewModel is initialized
+
         loadDataFromSharedPreferences()
     }
 
